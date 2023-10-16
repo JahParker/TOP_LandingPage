@@ -1,5 +1,16 @@
-body {
+/* Removes hidden div from Grammarly */
+#crx-root-main {
+  display: none;
+}
+
+* {
+  border: 1px solid darkgray;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   display: flex;
   flex-direction: column;
   min-width: 320px;
@@ -8,4 +19,107 @@ body {
 
 body > * {
   flex: 1;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 0 15%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.hero-container {
+  display: flex;
+  height: 100%
+}
+
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hero-body > * {
+  flex: 1;
+}
+
+.hero-body button {
+  width: 20%;
+  flex-grow: 0;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#card-header,
+.card-container {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+}
+
+.card-img {
+  width: 100%;
+  aspect-ratio: 1/1; /* this will make the height the same as the width */
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+#quote-container {
+  padding: 0 20%;
+}
+
+#quotee {
+  text-align: right;
+}
+
+#call-to-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.call-to-action-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
